@@ -11,7 +11,7 @@ board = [
 ]
 
 
-def solve(bo):
+def solveSudoku(bo):
     find = find_empty(bo)
     if not find:
         return True
@@ -73,6 +73,7 @@ def find_empty(bo):
                 return i, j  # row, col
 
     return None
+
 
 print_board(board)
 solve(board)
